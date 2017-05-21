@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/firstpage', function (){
+   return view('firstpage');
+});
+
+
+Route::get('first/show', 'FirstController@show');
+
+Route::get('first/test', 'FirstController@notShow');
